@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**
+ * CSS style © 2020
+ */
+
+html, body, input, button, div, span, h1, h2, h3, h4, p, a, img, ul, li, form, label, legend, table, tbody, tfoot, thead, tr {margin: 0;padding: 0;border: 0;}
+h1,h2,h3,h4{font-weight:bold; padding-bottom: .7%}
+img{padding:0;margin:0;}img a{border:0;}
+p{text-align:justify;}
+th{text-align: center;}
+th,td{border: 1px #808A9B solid;padding: 1px;}
+hr{padding:0;margin:0;}
+footer{bottom:-1px;width:100%;text-decoration:none;background-color: #f3f3f3;font-size:0.775em;font-weight:normal; padding: 7px;text-align:left;position:fixed;z-index:1000;}
+
+/**
+* Definite Navigation style css
+*/
+
+.insearch{font-size: 16px;padding: 8px;width:450px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.imgsearch{margin:0;width:45px;}
+
+#navPath{background-color: #FFFFFF; border:1px #999999 solid; border-radius: 5px; position: relative;width:350px;margin-left:66%;text-align:center;}
+#bt{margin:3px;padding: 3px;cursor:pointer;background-color: transparent;color: #808A9B; text-decoration:none;}
+
+
+#navsx {
+  color: #808A9B;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 19px;
+  text-align: center;
+  border: 1px #999999 solid;
+  border-radius: 2px;
+  margin-bottom: 3px;
+  box-shadow: 1px 1px 1px #999999;
+}
+
+
+#conL{
+	width: 20%;
+	margin: 4.2% 0 2% 0;
+	padding: 1% 1% 1.5% 1%;
+  text-align: left;
+  position: absolute;
+	z-index: -10001;
+}
+
+#conR{
+	width: 80%;
+  margin: 0 0 5% 20%;
+  padding: 6% 2%;
+	text-align: justify;
+	position: absolute;
+	z-index: -10000;
+}
+
+.insubmit{font-size: 15px;padding: 8px;border-radius:5px;width:auto;background-color: #FFFFFF;border: 2px solid #999999;}
+.inform{margin:0; background-color:#FFFFFF;border-radius:5px;display:flex; align-items:center;border: 2px solid #999999;width:350px;}
+
+.fosearch{margin:auto; background-color:#FFFFFF;border-radius:6px;display:flex; align-items:left;border: 2px solid #808A9B;width:500px;}
+@media only screen and (max-width: 900px) {
+  h2,h3,h4,#conL{display: none;}
+  .topnav{padding:2px;margin:0;}
+  #conR{width: 100%;margin: 0;padding: 15% 2% 10% 2%;text-align: justify;position: absolute;z-index: -10000;}
+ .inform{margin:auto; background-color:#FFFFFF;border-radius:5px;display:flex; align-items:center;border: 2px solid #999999;width:350px;}
+
+  .insubmit{font-size: 15px;padding: 8px;border-radius:5px;width:auto;background-color: #FFFFFF;border: 2px solid #999999;}
+  .fosearch{margin:auto;padding:0; background-color:#FFFFFF;border-radius:5px;display:flex; align-items:center;border: 2px solid #808A9B;width:350px;}
+  .insearch{font-size: 16px;padding: 8px;width:300px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+  .imgsearch{margin:0;width:45px;}
+  footer{width: 100%;bottom: -1px;padding: 2.3%;color: #FFFFFF;
+    text-align:left;
+    position: fixed;
+    background-color: #808A9B; 
+  }
+}
+
+/*
+.rownav0{
+  padding: 3px;
+  color:#000000;
+  border: 2px #999999 solid;
+  border-radius: 5px;
+  box-shadow:0 10px 8px #999999;
+  background-color: #f3f3f3;
+  display:flex;
+}
+
+.rownav1{
+	padding: 3px;
+  color: #000000;
+  border: 2px #999999 solid;
+  border-radius: 5px;
+  box-shadow:0 10px 8px #999999;
+  background-color: #FFFFFF;
+  display:flex;
+}
+*/
+.inputsearch{
+  width:auto;
+  padding: .7%;
+  font-size:15px;
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+}

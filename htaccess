@@ -1,0 +1,37 @@
+<IfModule mod_rewrite.c>
+
+php_flag display_startup_errors On
+php_flag display_errors On
+
+# Redirect on error page
+ ErrorDocument 404 /err.html
+
+
+
+# Turn Rewrite Engine On
+RewriteEngine On
+RewriteBase /
+# Rewrite for connect_db.php
+# RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^db connect_db.php [NC,L]
+RewriteRule ^ex_htaccess/tst ex_htaccess/hta.php [NC,L]
+#RewriteRule ^ex_htaccess([0-9]*)$ hta.php [L,QSA,NC]
+
+RewriteRule ^responsive_page defi/index.php?content=example_responsivepage [NC,L]
+
+# Website's rules starts here
+RewriteRule ^/ defi/index.php?content=home [NC,L]
+RewriteRule ^user_registration defi/index.php?content=user_registration [NC,L] 
+#RewriteRule ^register_confirm defi/index.php?content=register_confirm [NC,L] 
+RewriteRule ^login defi/index.php?content=login [NC,L]
+#RewriteRule ^logout defi/index.php?content=logout [NC,L]
+RewriteRule ^defi/adm defi/adm/view_users.php [NC,L]
+RewriteRule ^admin defi/index.php?content=admin [NC,L]
+RewriteRule ^user defi/index.php?content=user [NC,L]
+RewriteRule ^change_password defi/content/change_password.php [NC,L] 
+RewriteRule ^result_page defi/index.php?content=result [NC,L]
+RewriteRule ^edit_user defi/index.php?content=edit_user [NC,L]
+
+# Redirect page
+ 
+Redirect /defi/content/ /defi 
